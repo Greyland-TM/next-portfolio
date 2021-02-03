@@ -1,0 +1,113 @@
+.contact {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+
+    display: grid;
+    grid-template-columns: repeat(8, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, 12rem);
+
+    background-color: $color-black-2;
+
+    color: $color-black-3;
+
+    &__card {
+        grid-row: 2 / span 4;
+        grid-column: 2 / 8;
+        background-color: rgb(228, 230, 250);
+        border-radius: 3px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        background-image: linear-gradient( black, black);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 2px 80%;
+
+        &--left {
+            justify-self: center;
+            align-self: center;
+            grid-row: 1 / -1;
+            grid-column: 1 / 4;
+        }
+
+        &--right {
+            justify-self: center;
+            align-self: center;
+            grid-row: 1 / -1;
+            grid-column: 4 / -1;
+        }
+    }
+
+    &__headers {
+        font-size: $header-2;
+
+        &--1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            padding: 2rem 0 3rem 0;
+        }
+
+        &--2 {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            padding-top: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: $text-3;
+        padding: 0 3rem;
+
+
+        &--1 {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+
+        &--2 {
+            grid-row: 3 / 4;
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    // padding: 3rem;
+
+    &__group {
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__lable {
+        font-size: $text-3;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-top: .5rem;
+        display: block;
+        transition: all .5s;
+    }
+
+    &__input {
+        display: block;
+        border: none;
+        padding: 1rem 0;
+        width: 75%;
+    }
+
+    &__input:placeholder-shown + &__lable{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1.2rem);
+    }
+
+    &__textarea {
+        border: none;
+        resize: none;
+    }
+}

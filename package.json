@@ -9,7 +9,15 @@
   },
   "dependencies": {
     "next": "10.0.6",
+    "next-images": "^1.7.0",
+    "node-sass": "^5.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "scrollreveal": "^4.0.7",
+    "webpack": "^5.20.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
   }
 }
