@@ -91,14 +91,14 @@ class Description extends Component {
                 // height={500}
                 // width={500}
                 className="description__content--image description__content--image--1" 
-                ref={this.img1}
+                // ref={this.img1}
                 />
 
                 <img 
                 src={robot} 
                 alt="robot" 
                 className="description__content--image description__content--image--1-2" 
-                ref={this.img1}
+                // ref={this.img1}
                 />
 
                 <p className="description__content--vertical">stylish design makes a difference</p>
@@ -132,13 +132,15 @@ class Description extends Component {
                 src={workThings} 
                 alt="together" 
                 className="description__content--image description__content--image--2" 
-                ref={this.img2}/>
+                // ref={this.img2}
+                />
 
                 <img 
                 src={tablet} 
                 alt="together" 
                 className="description__content--image description__content--image--2-2" 
-                ref={this.img2}/>
+                // ref={this.img2}
+                />
 
                 <div className='description__text description__text--2'>
                     <h2 className="description__text--head">What about Greyland?</h2>
