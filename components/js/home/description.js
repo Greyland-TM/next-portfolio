@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-// import img from './my-image.jpg'
-// import {Link} from 'react-router-dom';
-// import Image from 'next/image'
 // import sr from '../HOC/scroll-reveal/scrollReveal';
 
 import tablet from '../../../media/tablet.jpg';
@@ -10,15 +7,15 @@ import robot from '../../../media/robot.jpg';
 import workThings from '../../../media/workThings.jpg';
 
 class Description extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {scrollPosition: 'bottom'}
+  constructor(props) {
+    super(props);
+    this.state = {scrollPosition: 'bottom'}
 
-  //   this.img1 = React.createRef();
-  //   this.img2 = React.createRef();
-  //   this.txt1 = React.createRef();
-  //   this.txt2 = React.createRef();
-  // }
+    this.img1 = React.createRef();
+    this.img2 = React.createRef();
+    this.txt1 = React.createRef();
+    this.txt2 = React.createRef();
+  }
 
   // componentDidMount = () => {
 
