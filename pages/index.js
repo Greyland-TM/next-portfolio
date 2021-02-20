@@ -8,6 +8,7 @@ import Skills from '../components/js/home/skills';
 import Description from '../components/js/home/description';
 import Projects from '../components/js/home/projects';
 import ContactMe from '../components/js/home/contact-me';
+import Footer from '../components/js/footer';
 
 const Home = ({items, ...props}) => {
   const [filteredItems, setFilteredItems] = React.useState(items);
@@ -23,13 +24,14 @@ const Home = ({items, ...props}) => {
   return (
     <>
         <div className='home-container'>
-        <Navbar></Navbar>
-        {/* <img src={pattern1} alt="" className="home__img"/> */}
-        <Landing></Landing>
-        <Skills></Skills>
-        <Description></Description>
-        {/* <Projects></Projects>
-        <ContactMe></ContactMe> */}
+          <Navbar></Navbar>
+          {/* <img src={pattern1} alt="" className="home__img"/> */}
+          <Landing></Landing>
+          <Skills></Skills>
+          <Description></Description>
+          <Projects></Projects>
+          <ContactMe></ContactMe>
+          <Footer></Footer>
         </div>
     </>
   );

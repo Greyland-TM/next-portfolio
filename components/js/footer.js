@@ -1,15 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import  Link  from 'next/link';
 
 const Footer = () => (
     <div className="footer">
         <div className="footer__pageselect">
             <ul className='footer__pageselect--list'>
-                <li><Link className="footer__pageselect--item" to='/'>Home</Link></li>
-                <li><Link className="footer__pageselect--item" to='/skills'>Skills</Link></li>
-                <li><Link className="footer__pageselect--item" to='/about-me'>About me</Link></li>
-                <li><Link className="footer__pageselect--item" to='/projects'>Projects</Link></li>
-                <li><Link className="footer__pageselect--item" to='/contact'>Contact</Link></li>
+                <li className="footer__pageselect--item"><Link href='/'><a className='footer__pageselect--link'>Home</a></Link></li>
+                <li  className="footer__pageselect--item"><Link  href='/resume'><a className='footer__pageselect--link'>Resume</a></Link></li>
+                <li  className="footer__pageselect--item"><Link  href='/contact'><a className='footer__pageselect--link'>Contact</a></Link></li>
             </ul>
         </div>
         <div className="footer__copyright">

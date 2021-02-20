@@ -5,7 +5,7 @@ import { IoMdGrid } from "react-icons/io";
 
 const Card = React.forwardRef((props, ref) => (
     <div className="card" ref={ref}>
-        {/* <div className="card__top">
+        <div className="card__top">
             <figure className="card__image">
                 <img src={props.src} alt="Project Cover" className='card__image'/>
             </figure>
@@ -34,7 +34,7 @@ const Card = React.forwardRef((props, ref) => (
                 </div>
             </div>
             <a href={props.link} target='blank' className="btn-2 card__bottom--btn">View this project &rarr;</a>
-        </div> */}
+        </div>
     </div>
 ));
 

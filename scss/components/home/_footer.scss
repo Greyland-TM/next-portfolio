@@ -26,14 +26,20 @@
             padding-bottom: 1px;
             text-decoration: none;
             color: $color-white-2;
+            transition: all .1s;
 
             &:hover {
                 color: $color-oppisite;
-                transform: scale(2);
+                transform: scale(1.2);
                 cursor: pointer;
                 padding-bottom: 0;
                 border-bottom: 1px solid $color-oppisite;
             }
+        }
+
+        &--link {
+            text-decoration: none;
+            color: white;
         }
     }
 

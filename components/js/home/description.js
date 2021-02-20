@@ -7,15 +7,15 @@ import robot from '../../../media/robot.jpg';
 import workThings from '../../../media/workThings.jpg';
 
 class Description extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {scrollPosition: 'bottom'}
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {scrollPosition: 'bottom'}
 
-    this.img1 = React.createRef();
-    this.img2 = React.createRef();
-    this.txt1 = React.createRef();
-    this.txt2 = React.createRef();
-  }
+  //   this.img1 = React.createRef();
+  //   this.img2 = React.createRef();
+  //   this.txt1 = React.createRef();
+  //   this.txt2 = React.createRef();
+  // }
 
   // componentDidMount = () => {
 
@@ -79,7 +79,9 @@ class Description extends Component {
   render () {
     return (
           <div className="description" >
-            <div className="description__content description__content--1" ref={this.txt1}>
+            <div className="description__content description__content--1" 
+            // ref={this.txt1}
+            >
                 <div className="description__content--background description__content--background-1"></div>
 
                 <img 
@@ -122,7 +124,9 @@ class Description extends Component {
             <h1 className="description__seperator--body">Creative design that flows</h1>
           </div>
 
-          <div className="description__content description__content--2" ref={this.txt2}>
+          <div className="description__content description__content--2" 
+          // ref={this.txt2}
+          >
                 <div className="description__content--background description__content--background-2"></div>
 
                 <img 
